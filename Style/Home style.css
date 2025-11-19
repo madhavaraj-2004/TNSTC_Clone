@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #fffffd;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #92caff;
+    flex-wrap: wrap;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header li {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header ul li a {
+    color: black;
+    transition: color 0.3s;
+}
+
+.header ul li a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+.welcome-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 470px;           /* Increased height */
+    width: 99%;              /* Wider */
+    max-width: 1400px;       /* Limit on big screens */
+    margin: 20px auto;    
+    margin-top: 0%;   /* Centered */
+    background-size: cover;
+    background-position: center;
+    background-color: #020202;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    transition: background-image 1s ease-in-out;
+}
+
+.welcome-card  h1{
+ font-family: "Aladin", serif;
+}
+
+
+/* Popular Districts Grid */
+.topdistcont1 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.popdist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.post {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lab(47.76% 46.42 -73.73));
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.popdist_img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.post h2 {
+    text-align: center;
+    margin: 10px;
+    color: black;
+}
+
+/* Bus Stand Section */
+.pop_Busstd {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.Bus_std {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    padding: 22px;
+}
+
+.Bus_stnm {
+    width: 100%;
+    max-width: 320px;
+    border: 2px solid #f6f7e1;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+    background: white;
+    transition: transform 0.3s;
+}
+
+.Bus_stnm:hover {
+    transform: scale(1.03);
+}
+
+.Bus_stdpic {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Bus_stdpic:hover {
+    transform: scale(1.05);
+}
+
+/* Kural Image */
+.kural {
+    width: 90%;
+    max-width: 1260px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 20px 10px;
+    border-top: 1px solid #444;
+}
+
+.foot-conte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.foot-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-left: 20px;
+}
+
+.foot-section ul {
+    list-style: none;
+}
+
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.foot-section ul li a {
+    color: white;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.foot-section ul li a:hover {
+    text-decoration: underline;
+    color: #ff1919;
+}
+
+/* Social Media */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.social-media img {
+    width: 35px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Bus_stdpic {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .welcome {
+        font-size: 1rem;
+    }
+
+    .Bus_std {
+        padding: 10px;
+    }
+
+    .foot-section h4 {
+        font-size: 1.1rem;
+    }
+}

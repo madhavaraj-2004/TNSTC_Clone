@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffffd;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* ===== Header ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 120px;
+    background-color: #92caff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.header img {
+    max-height: 90px;
+    flex-shrink: 0;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.header li {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header ul li a {
+    color: black;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.header ul li a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+/* ===== Heading ===== */
+.head01 {
+    font-family: "Aladin", serif;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+/* ===== Slider ===== */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-sec {
+    display: flex;
+    animation: slide 30s infinite ease-in-out;
+}
+
+.image-sec img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    33%, 53% { transform: translateX(-100%); }
+    66%, 86% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* ===== Section Content ===== */
+.pic_content {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.imgee {
+    float: left;
+    margin: 0 1.2rem 1rem 0;
+    width: 200px;
+    border-radius: 6px;
+}
+
+.List_i ul {
+    margin-left: 1.2rem;
+}
+
+.List_i li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #0e0e0e;
+    padding: 2rem 1rem;
+}
+
+.foot-conte {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.foot-section h4 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.foot-section ul {
+    list-style: none;
+}
+
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.foot-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.foot-section ul li a:hover {
+    color: #ff1919;
+    text-decoration: underline;
+}
+
+/* ===== Social Media ===== */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-media img {
+    width: 40px;
+    transition: transform 0.3s ease, filter 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .header ul {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .imgee {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .foot-conte {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

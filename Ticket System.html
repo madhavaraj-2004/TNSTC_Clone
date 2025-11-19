@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TNSTC Ticket System Comparison</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      background: #f9fafc;
+      font-family: "Poppins", sans-serif;
+      color: #222;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    /* Header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        background: #92caff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        flex-wrap: wrap;
+    }
+
+    .header img {
+        height: 70px;
+    }
+
+    .header ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .header li {
+        font-size: 1.2rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+    }
+
+    .header ul li a {
+        color: #000;
+        transition: color 0.3s;
+    }
+
+    .header ul li a:hover {
+       color: orangered;
+       text-decoration: underline; 
+    }
+
+    /* Title */
+    h1 {
+      font-family: "Aladin", cursive;
+      font-size: 38px;
+      text-align: center;
+      color: #1a1a1a;
+      margin: 40px 0 30px;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #108cdf;
+    }
+
+    /* Table */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      max-width: 95%;
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 18px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    td {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    th {
+      background: #108cdf;
+      color: white;
+      font-size: 18px;
+    }
+
+    table tr:hover td {
+      background: #f1faff;
+    }
+
+    /* Sections */
+    .advantages, .challenges {
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 95%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      background: #fff;
+    }
+
+    ul {
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 1.6;
+    }
+
+    .emoji {
+      font-size: 1.2em;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 50px;
+        background: #0e0e0e;
+        color: white;
+        padding: 30px 10px;
+    }
+    
+    .foot-conte {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .foot-section h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        font-weight: 600;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: 20px;
+        font-family: "Noto Serif Hentaigana", serif;
+
+    }
+    
+    .foot-section ul {
+        list-style: none;
+        padding: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .foot-section ul li {
+      font-family: "Noto Serif Hentaigana", serif;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    
+    .foot-section ul li a {
+        color: white;
+        transition: 0.3s;
+    }
+    
+    .foot-section ul li a:hover {
+        text-decoration: underline;
+        color:#ff1919;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 22px;
+        gap: 15px;
+    }
+    
+    .social-media img {
+        width: 36px;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    .social-media img:hover {
+        transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+        <img src="Images\TNSTC logo.png" alt="my head">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Vision.html">Vision</a></li> 
+        </ul>
+    </div>
+
+  <h1>TNSTC New Digital Ticket Machine vs Old Paper Tickets</h1>
+
+  <div class="table-wrapper">
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th class="emoji">🧾 Old Paper Tickets</th>
+      <th class="emoji">💻 New Digital Ticket Machines</th>
+    </tr>
+    <tr>
+      <td>Ticket Issuing Method</td>
+      <td>Manually written or printed from mechanical roll</td>
+      <td>Issued via handheld electronic device</td>
+    </tr>
+    <tr>
+      <td>Speed & Efficiency</td>
+      <td>Slower, especially during peak hours</td>
+      <td>Faster, with quick touch inputs and auto fare</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>Prone to human error in fare, stage, or route</td>
+      <td>High accuracy, with GPS and fare integration</td>
+    </tr>
+    <tr>
+      <td>Data Tracking</td>
+      <td>Manual logs and paper bundles</td>
+      <td>Real-time digital logs, cloud sync possible</td>
+    </tr>
+    <tr>
+      <td>Revenue Leakage</td>
+      <td>Higher chance due to manual handling</td>
+      <td>Reduced with automated tracking</td>
+    </tr>
+    <tr>
+      <td>Passenger Details</td>
+      <td>Limited info (stage, fare)</td>
+      <td>Can include time, bus ID, location, etc.</td>
+    </tr>
+    <tr>
+      <td>Integration</td>
+      <td>Not integrated with backend systems</td>
+      <td>Can be integrated with billing, GPS, & audit</td>
+    </tr>
+    <tr>
+      <td>Environmental Impact</td>
+      <td>Uses a lot of paper</td>
+      <td>Less paper (though not fully paperless yet)</td>
+    </tr>
+    <tr>
+      <td>Maintenance</td>
+      <td>Low tech, fewer breakdowns</td>
+      <td>Needs charging, updates, and servicing</td>
+    </tr>
+    <tr>
+      <td>Training Requirement</td>
+      <td>Simple, traditional method</td>
+      <td>Requires basic tech training for conductors</td>
+    </tr>
+    <tr>
+      <td>Ticket Audit & Verification</td>
+      <td>Manual ticket check</td>
+      <td>QR codes / digital records enable easy audit</td>
+    </tr>
+  </table>
+  </div>
+
+  <div class="advantages">
+    <h2>✅ Advantages of Digital Ticket Machines</h2>
+    <ul>
+      <li>Reduces cash pilferage</li>
+      <li>Speeds up passenger boarding</li>
+      <li>Enables digital records for transparency</li>
+      <li>Easier to monitor conductor performance</li>
+      <li>Supports contactless ticketing in the future</li>
+    </ul>
+  </div>
+
+  <div class="challenges">
+    <h2>❌ Challenges</h2>
+    <ul>
+      <li>Initial cost for hardware and training</li>
+      <li>Technical issues (battery, network, breakdowns)</li>
+      <li>Resistance to change by some staff or passengers</li>
+    </ul>
+  </div>
+
+  <!--footer area-->
+<div class="footer">
+    <div class="foot-conte">
+  
+        <div class="foot-section">
+            <h4>STU Information</h4>
+            <ul>
+                <li><a href="Divisions.html">Divisions</a></li>
+                <li><a href="Organization Structure.html">Organization Structure</a></li>
+                <li><a href="Fare Structure.html">Fare Structure</a></li>
+            </ul>
+        </div>
+  
+        <div class="foot-section">
+            <h4>General Info</h4>
+            <ul>
+                <li><a href="Busstans.html">Bus Stands</a></li>
+                <li><a href="Bus Gallery.html">Gallery</a></li>
+                <li><a href="Divisional Depots.html">Depots</a></li>
+            </ul>
+        </div>
+  
+        <div class="foot-section">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="Ticket System.html">Ticket System</a></li>
+                <li><a href="IRT.html">IRT</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>
+            </ul>
+        </div>
+  
+    </div>
+  
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Arasubus/61553062190406/" target="_blank"><img src="Social Media Images/FB.png" alt="Facebook"></a>
+        <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images/X.png" alt="X.com"></a>
+        <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images/yourubr.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images/instagram.png" alt="Instagram"></a>
+    </div>
+  </div>
+</body>
+</html>

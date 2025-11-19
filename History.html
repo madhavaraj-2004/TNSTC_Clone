@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffffd;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  background-color: #92caff;
+  padding: 10px 20px;
+}
+.header ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.header li {
+  font-size: 1.2rem;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+.header ul li a {
+  color: black;
+}
+.header ul li a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+/* HEADINGS */
+h1 {
+  color: black;
+  font-family: "Aladin", serif;
+  font-size: 34px;
+  margin: 20px 0;
+}
+
+/* SECTIONS */
+.histo1,
+.road_transpot,
+.stu_mng {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+ul li {
+  font-size: 22px;
+  margin: 12px 0;
+  line-height: 1.6;
+}
+b {
+  color: #e24e49;
+}
+
+/* IMAGE STYLING */
+.road_transpot img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* TABLE */
+.stu_mng table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.stu_mng th,
+.stu_mng td {
+  border: 2px solid #e6f2f8;
+  padding: 15px;
+}
+.stu_mng th {
+  background-color: #004080;
+  color: #eee;
+}
+.stu_mng tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.stu_mng table,
+.stu_mng th,
+.stu_mng td {
+  font-size: 18px;
+  text-align: left;
+}
+
+/* FOOTER */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+.footer {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 20px 10px;
+  border-top: 1px solid #444;
+}
+.foot-conte {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.foot-section {
+  flex: 1 1 200px;
+}
+.foot-section h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.foot-section ul {
+  list-style: none;
+  padding: 0;
+}
+.foot-section ul li {
+  font-family: "Noto Serif Hentaigana", serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.foot-section ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.foot-section ul li a:hover {
+  text-decoration: underline;
+  color: #ff1919;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.social-media img {
+  width: 40px;
+  height: auto;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 28px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .header ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  ul li {
+    font-size: 18px;
+  }
+  .stu_mng table,
+  .stu_mng th,
+  .stu_mng td {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .foot-conte {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  ul li {
+    font-size: 16px;
+  }
+  .stu_mng table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+</style>
+<body>
+  <div class="header">
+    <img src="Images\TNSTC logo.png" alt="my head">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Vision.html">Vision</a></li> 
+    </ul>
+</div>
+
+  <h1 style="padding-left: 20px; margin-left: 20px;">History of Tamil Nadu State Transport Undertakings</h1>
+    <div class="histo1">
+        <ul>
+            <li>
+                In 1944, British Government appointed a Committee to analyse public transport
+                in the Country and the Committee recommended nationalisation of transport
+                sector in India.
+            </li>
+            <li>
+                In 1947, private buses operated in Madras presidency were nationalised by the
+                Government and<b> ‘Government Bus Service’</b> was started and then changed to
+                <b>‘State Transport Department’</b> and then converted into <b>‘Public Sector
+                Undertaking’ </b>for improving efficiency through operational autonomy.
+            </li>
+            <li>
+                On 01.01.1972, Pallavan Transport Corporation was established under
+                Companies Act,1956 and buses operated in Chennai and Chengalpattu were
+                brought under it and paved way for inception of other State Transport
+                Undertakings.
+            </li>
+            <li>
+                21 STUs were created by bifurcation from 1972 to 1996.
+            </li>
+            <li>
+                Again merging of STUs started in 2001, STUs are functioning as “Eight” from
+                2004.
+            </li>
+        </ul>
+
+    </div>
+    <br>
+
+    <div class="road_transpot">
+        <h1>Tamil Nadu Road & Transport Profile</h1>
+        <img class="roadee" src="Images\road transport profile.PNG" alt="Road transort network">
+    </div>
+
+    <div class="stu_mng">
+        <h1>STU Management</h1>
+
+        <table>
+            <tr>
+                <th>STU</th>
+                <th>MTC</th>
+                <th>TNSTC</th>
+                <th>SETC</th>
+            </tr>
+
+            <tr>
+                <td>Service Coverage</td>
+                <td>Chennai Metropolitan Area </td>
+                <td>Divisional & Regional Area</td>
+                <td>Inter & Intra State Area</td>
+            </tr>
+            <tr>
+                <td>Registered Under </td>
+                <td colspan="3">Public Sector Under Taking of Government of Tamil Nadu 
+                    Registered Under Companies Act</td>
+            </tr>
+            <tr>
+                <td>Management</td>
+                <td colspan="3">Board of Directors and Managing Director</td>
+            </tr>
+            <tr>
+                <td>Chairman </td>
+                <td colspan="3">Secretary (Transport)</td>
+            </tr>
+            <tr>
+                <td>Managing Director</td>
+                <td colspan="3">Chief Executive Officer</td>
+            </tr>
+            <tr>
+                <td>Fare Management</td>
+                <td colspan="3">Policy decision of the Government</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--footer area-->
+<div class="footer">
+  <div class="foot-conte">
+
+      <div class="foot-section">
+          <h4>STU Information</h4>
+          <ul>
+              <li><a href="Divisions.html">Divisions</a></li>
+              <li><a href="Organization Structure.html.html">Organization Structure</a></li>
+              <li><a href="Fare Structure.html">Fare Structure</a></li>
+          </ul>
+      </div>
+
+      <div class="foot-section">
+          <h4>General Info</h4>
+          <ul>
+              <li><a href="Busstans.html">Bus Stands</a></li>
+              <li><a href="Bus Gallery.html">Gallery</a></li>
+              <li><a href="Divisional Depots.html">Depots</a></li>
+          </ul>
+      </div>
+
+      <div class="foot-section">
+          <h4>Other Links</h4>
+          <ul>
+              <li><a href="Ticket System.html">Ticket System</a></li>
+              <li><a href="IRT.html">IRT</a></li>
+              <li><a href="Contact page.html">Contact Us</a></li>
+          </ul>
+          
+      </div>
+
+  </div>
+
+
+
+  <div class="social-media">
+      <a href="https://www.facebook.com/people/Arasubus/61553062190406/
+      " target="_blank"><img src="Social Media Images\FB.png" alt="Facebook"></a>
+      <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images\X.png" alt="X.com"></a>
+      <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images\yourubr.png" alt="Youtube"></a>
+      <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images\instagram.png" alt="Instagram"></a>
+  </div>
+</div>
+</body>
+</html>

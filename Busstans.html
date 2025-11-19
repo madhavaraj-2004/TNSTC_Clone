@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus stands</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffffd;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 5%;
+    background-color: #92caff;
+}
+
+.header img {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header li {
+    font-size: 1.2rem;
+}
+
+.header ul li a {
+    color: black;
+    transition: 0.3s;
+}
+
+.header ul li a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+/* TITLES */
+h1 {
+    font-family: "Aladin", serif;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+/* ABOUT SECTION */
+.About {
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.About ul {
+    list-style: none;
+}
+
+.About li {
+    padding: 8px 0;
+    border-bottom: 1px solid #1ae43c;
+    font-size: 1.2rem;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e0e0e0;
+}
+
+th, td {
+    border: 1.5px solid black;
+    font-size: 1rem;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4400ff;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #e0e0e0e8;
+}
+
+tr:hover {
+    background-color: #ffffff;
+}
+
+/* Make table scrollable on small screens */
+.table-container {
+    overflow-x: auto;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 20px 5%;
+}
+
+.foot-conte {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.foot-section {
+    flex: 1 1 200px;
+}
+
+.foot-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.foot-section ul {
+    list-style: none;
+}
+
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.foot-section ul li a {
+    color: white;
+    transition: 0.3s;
+}
+
+.foot-section ul li a:hover {
+    text-decoration: underline;
+    color: #ff1919;
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 35px;
+    height: auto;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header ul {
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    .foot-conte {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .header img {
+        max-height: 60px;
+    }
+
+    .header ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    th, td {
+        font-size: 0.85rem;
+    }
+}
+
+</style>
+
+<body>
+  <div class="header">
+        <img src="Images\TNSTC logo.png" alt="my head">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Vision.html">Vision</a></li> 
+        </ul>
+    </div>
+    <h1>Bus stands</h1>
+    <div class="About">
+        <ul>
+            <li>
+               <b>Bus stand</b> is a designated parking location where a buses waits out of service between scheduled public transport services. 
+            </li>
+            <li>
+                <b>Bus station</b> is a structure where city or intercity buses stop to pick up and drop off passengers. 
+            </li>
+            <li>
+                <b>Bus terminus</b> Bus terminus is a designated place where a bus or coach starts or ends its scheduled route. The terminus is the designated place that a timetable is timed from. For larger bus Schedules.
+            </li>
+            <li>
+               <b>Bus depot</b> Bus depot can also be used to refer to a bus station, it generally refers to a bus garage. 
+            </li>
+            <li>
+                <b>Bus stop,</b> which is usually simply a place on the roadside, where buses can stop. 
+            </li>
+        </ul>
+    </div>
+
+    <div class="Contact Info">
+        <h1>Bus Stands Contact Info</h1>
+        <center>
+        <table border="1px">
+            <tr>
+                <th>S.No</th>
+                <th>Designation</th>
+                <th>Bus Stand Phone No</th>
+                <th>Officers Number</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Chennai(CMBT)</td>
+                <td>9445014450</td>
+                <td>044-24794709</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Coiambatore</td>
+                <td>8508717282</td>
+                <td>0433-2524969</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Cuddalore</td>
+                <td>9344684644 </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Bangalore </td>
+                <td>080-22113454 </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Dindigul </td>
+                <td>9488592135 </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Ernakulam </td>
+                <td>0484 -2372616 </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Erode </td>
+                <td>0424-4020664</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Hosur </td>
+                <td>04344 - 247355 </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Kanyakumari</td>
+                <td>04652-246019</td>
+                <td>B.M 04652-246285 </td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Karur</td>
+                <td>04324 - 230680</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>Kodaikanal</td>
+                <td>8489272077</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td>Kumbakonam </td>
+                <td>0435-2431251 </td>
+                <td>B.M 0435-2421313 </td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>Madurai</td>
+                <td>0452-4219938</td>
+                <td>B.M 0452-2566820 | D.M 0452-2566540</td>
+            </tr>
+
+            <tr>
+                <td>14</td>
+                <td>Mayiladuthurai</td>
+                <td>04364-222455</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>15</td>
+                <td>Nagapatinam</td>
+                <td>04365-242455</td>
+                <td>B.M 04365-247825</td>
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td>Namakkal</td>
+                <td>9600304728</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>17</td>
+                <td>Palani</td>
+                <td>04545-242208</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>18</td>
+                <td>Puduchery </td>
+                <td>0413-2203464 </td>
+                <td>D.M 0413-2202014 </td>
+            </tr>
+
+            <tr>
+                <td>19</td>
+                <td>Pudukottai</td>
+                <td>9952877638</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>20</td>
+                <td>Rameswaram</td>
+                <td>04573-221263</td>
+                <td></td>
+            </tr>
+
+            
+            <tr>
+                <td>21</td>
+                <td>Salem</td>
+                <td>0427-2446041</td>
+                <td>B.M 0427-2412960</td>
+            </tr>
+
+            
+            <tr>
+                <td>22</td>
+                <td>Sivakasi</td>
+                <td>9043039907</td>
+                <td></td>
+            </tr>
+
+            
+            <tr>
+                <td>23</td>
+                <td>Tanjore</td>
+                <td>8012758500</td>
+                <td>B.M 04362-230950</td>
+            </tr>
+
+            
+            <tr>
+                <td>24</td>
+                <td>Theni</td>
+                <td>9488515030</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>Tiruchendur </td>
+                <td>9842197092</td>
+                <td>04639-242211</td>
+            </tr>
+
+            
+            <tr>
+                <td>26</td>
+                <td>Tiruppur</td>
+                <td>0421-4242298</td>
+                <td></td>
+            </tr>
+
+            
+            <tr>
+                <td>27</td>
+                <td>Tiruvannamalai </td>
+                <td>04175-254355</td>
+                <td></td>
+            </tr>
+
+            
+            <tr>
+                <td>28</td>
+                <td>Tiruvarur </td>
+                <td>04366-221020</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>29</td>
+                <td>Trichy</td>
+                <td>9487523432</td>
+                <td>B.M 0431-2333737|D.M 0431-2460680</td>
+            </tr>
+
+            <tr>
+                <td>30</td>
+                <td>Vellore</td>
+                <td>04162 - 220552</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>31</td>
+                <td>Villupuram </td>
+                <td>9791919692 </td>
+                <td>SG.Ae 04146-222842</td>
+            </tr>
+
+            <tr>
+                <td>32</td>
+                <td>Vedaranyam</td>
+                <td>7200658659</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</center>
+<br>
+
+<!--footer area-->
+<div class="footer">
+    <div class="foot-conte">
+
+        <div class="foot-section">
+            <h4>STU Information</h4>
+            <ul>
+                <li><a href="Divisions.html">Divisions</a></li>
+                <li><a href="Organization Structure.html.html">Organization Structure</a></li>
+                <li><a href="Fare Structure.html">Fare Structure</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-section">
+            <h4>General Info</h4>
+            <ul>
+                <li><a href="Busstans.html">Bus Stands</a></li>
+                <li><a href="Bus Gallery.html">Gallery</a></li>
+                <li><a href="Divisional Depots.html">Depots</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-section">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="Ticket System.html">Ticket System</a></li>
+                <li><a href="IRT.html">IRT</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>
+            </ul>
+            
+        </div>
+
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Arasubus/61553062190406/
+        " target="_blank"><img src="Social Media Images\FB.png" alt="Facebook"></a>
+        <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images\X.png" alt="X.com"></a>
+        <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images\yourubr.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images\instagram.png" alt="Instagram"></a>
+    </div>
+</div>
+
+
+    
+</body>
+</html>

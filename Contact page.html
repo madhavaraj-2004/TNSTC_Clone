@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+body {
+    background-color: #fffffd;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #92caff;
+    padding: 10px 20px;
+}
+.header img {
+    max-height: 80px;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.header li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    padding-right: 20px;
+}
+.header ul li a {
+    color: black;
+}
+.header ul li a:hover {
+    color: orangered;
+    text-decoration: underline; 
+}
+
+/* MAIN CONTENT */
+h1 {
+    font-family: "Aladin", serif;
+    text-align: left;
+    margin: 20px;
+    color: black;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact-info {
+    flex: 1 1 60%;
+    min-width: 250px;
+}
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info strong {
+    color: #003366;
+}
+.app_section {
+    flex: 1 1 35%;
+    text-align: center;
+    min-width: 200px;
+}
+.app_section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0e0e0e;
+    padding: 20px 10px;
+    margin-top: 10px;
+}
+.foot-conte {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.foot-section {
+    flex: 1 1 200px;
+}
+.foot-section h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.foot-section ul {
+    list-style: none;
+    padding: 0;
+}
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+.foot-section ul li a {
+    color: white;
+}
+.foot-section ul li a:hover {
+    text-decoration: underline;
+    color: #ff1919;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.social-media a {
+    margin: 5px;
+}
+.social-media img {
+    width: 40px;
+    height: auto;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header ul {
+        justify-content: center;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info, .app_section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .header img {
+        max-height: 60px;
+    }
+    .contact-info p {
+        font-size: 16px;
+    }
+    .foot-section h4 {
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="Images/TNSTC logo.png" alt="Logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="History.html">History</a></li>
+        <li><a href="Vision.html">Vision</a></li> 
+    </ul>
+</div>
+
+<!-- MAIN -->
+<h1>Contact Us</h1>
+<div class="container">
+    <div class="content">
+        <div class="contact-info">
+            <p><strong>Tamilnadu State Transport Corporation Ltd.</strong></p>
+            <p>Head Office, Thiruvalluvar House,<br>Pallavan Salai, Chennai - 600002.</p>
+            <p><strong>For Reservation Related Queries:</strong> 9513948001</p>
+            <p><strong>Email:</strong> <a href="mailto:commercial@tnstc.org">commercial@tnstc.org</a></p>
+            <p><strong>Customer Care:</strong> 18005991500</p>
+            <p><strong>Billdesk Payment Queries:</strong> 044-49076326 / 49076316</p>
+            <p>Email: <a href="mailto:pgsupport@billdesk.com">pgsupport@billdesk.com</a></p>
+            <p><strong>Basispay Helpdesk:</strong> 7305068045</p>
+            <p>Email: <a href="mailto:support@basispay.in">support@basispay.in</a></p>
+        </div>
+        <div class="app_section">
+            <img src="Images/tnst app.jpg" alt="Tnstc Mobile App">
+            <p><strong><a href="https://play.google.com/store/apps/details?id=com.tnstc&pcampaignid=web_share" target="_blank">tnstc.in Mobile Apps</a></strong></p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="foot-conte">
+        <div class="foot-section">
+            <h4>STU Information</h4>
+            <ul>
+                <li><a href="Divisions.html">Divisions</a></li>
+                <li><a href="Organization Structure.html.html">Organization Structure</a></li>
+                <li><a href="Fare Structure.html">Fare Structure</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>General Info</h4>
+            <ul>
+                <li><a href="Busstans.html">Bus Stands</a></li>
+                <li><a href="Bus Gallery.html">Gallery</a></li>
+                <li><a href="Divisional Depots.html">Depots</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="Ticket System.html">Ticket System</a></li>
+                <li><a href="IRT.html">IRT</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Arasubus/61553062190406/" target="_blank"><img src="Social Media Images/FB.png" alt="Facebook"></a>
+        <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images/X.png" alt="X.com"></a>
+        <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images/yourubr.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images/instagram.png" alt="Instagram"></a>
+    </div>
+</div>
+
+</body>
+</html>

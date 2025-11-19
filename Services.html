@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fffffd;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: #92caff;
+    padding: 10px 20px;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.header ul li a {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.header ul li a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Aladin", serif;
+    font-size: 34px;
+    color: black;
+    text-align: left;
+    margin: 20px;
+}
+
+h2 {
+    color: black;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+ul {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 0;
+}
+
+.our_srvs, .Fare_free, .types_of_services {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+    border-radius: 8px;
+}
+
+.Fare_free {
+    box-shadow: 0px 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #92caff;
+}
+
+.pic_ali {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Fare_free h1, .types_of_services h1 {
+    color: black;
+    text-align: left;
+}
+
+.types_of_services h2 {
+    color: black;
+    text-align: center;
+}
+
+.Fare_free ul, .types_of_services ul {
+    padding: 0 20px;
+}
+
+.types_of_services h2 {
+    margin-top: 10px;
+}
+
+.types_of_services img {
+    display: block;
+    margin: 10px auto;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul ul li {
+    margin-bottom: 5px;
+}
+
+.b {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+hr {
+    border: 2px solid black;
+    margin: 0 20px;
+}
+
+.footer {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 20px 10px;
+    border-top: 1px solid #444;
+}
+
+.foot-conte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.foot-section {
+    flex: 1 1 200px;
+}
+
+.foot-section h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.foot-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.foot-section ul li a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.foot-section ul li a:hover {
+    text-decoration: underline;
+    color: #ff1919;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header li {
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .our_srvs, .Fare_free, .types_of_services {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .foot-conte {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .foot-section {
+        flex: 1 1 100%;
+    }
+}
+
+</style>
+<body>
+    <div class="header">
+        <img src="Images\TNSTC logo.png" alt="my head">
+        <ul>
+              <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Vision.html">Vision</a></li> 
+        </ul>
+    </div>
+
+    <h1>Our Services</h1>
+    <div class="our_srvs">
+
+        <ul>
+            <li>
+                The State of Tamil Nadu is a pioneer in providing efficient, safe,
+                affordable, comfortable, reliable and sustainable access for the growing number
+                of people to jobs, education, recreation and such other needs within the cities,
+                and rural people to reach cities/towns and also all parts of the State through
+                a well connected reliable road transport connectivity.
+            </li>
+
+            <li>
+                The State Transport Undertaking provide bus
+                connectivity to the villages which have a minimum population
+                of 1000 in the State.
+            </li>
+
+            <li>
+                Almost all areas in urban habitations, inter-district and inter-state to the
+                neighbouring states are connected on a wider scale and transported about 
+                1.7 Crore passengers per day during normal period.
+            </li>
+
+            <li>
+                The State Transport Undertakings transported about 0.7 Crore per day in the year
+                2020-2021 due to Covid-19 pandemic and had increased to 1.21 Crore per
+                day in the year 2021-2022, and after relaxation of all Covid-19 restrictions
+                in March-2022,
+                the passenger ridership has increased to 1.55 Crore per day.
+            </li>
+
+            <li>
+                The State Transport Undertakings by and large have accomplished its
+                responsibilities by way of operating various types of bus services
+                with affordable fare structure as town, intra-city, inter-city, 
+                inter-State and transporting about 1.68 crore people per day.
+            </li>
+
+        </ul>
+    </div>
+    <br>
+
+    <h1>Fare Free Travel for Women Passengers</h1>
+    <div class="Fare_free">
+        
+        <ul>
+
+            <li>
+                o empower women through greater access to jobs and education and to 
+                promote public transport, a pioneering effort of providing 
+                “No fare Bus Service to Women in Town Buses across the State” as 
+                announced in the election manifesto by the Hon‘ble Chief Minister has 
+                been implemented and the same facility is extended to the transgenders 
+                and escorts of the person with disability of 40% and above.
+            </li>
+
+            <li>
+                The No fare travel scheme for women to travel free of charge in
+                ordinary fare town buses (white board) in all State Transport 
+                Undertakings is to achieve social inclusion of women by facilitating 
+                greater mobility and financial sustainability.
+            </li>
+
+            <li>
+                <b><u>
+                    7,164 ordinary town buses are being operated across 
+                    the State of Tamil Nadu and about
+                    41 lakhs women use the buses daily.
+                </u></b>
+            </li>
+
+            <li>
+                This No fare travel scheme will improve 
+                women's access to work, education, health and recreation.
+            </li>
+        </ul>
+    </div>
+    <br>
+
+    <h1>Types Of Services</h1>
+    <div class="types_of_services">
+        
+        <br>
+
+        <h2>TNSTC</h2>
+        <img class="pic_ali" src="Images\tnstc.png"  alt="tnstc bus">
+        <ul>
+            <li>
+                Tamil Nadu State Transport Corporation Limited 
+                (TNSTC) is a public transport bus operator in Tamil Nadu, India.
+            </li>
+            <li>
+                It operates intercity or Mofusil bus services to cities in 
+                Tamil Nadu and from Tamil Nadu to its neighboring states.
+            </li>
+        </ul>
+        <hr>
+        <br>
+        <h2>SETC</h2>
+        <img class="pic_ali" src="Images\setc-removebg-preview.png" alt="setc bus">
+        <ul>
+            <li>
+                State Express Transport Corporation (SETC) is one
+                 of the 8 affiliates of the Tamil
+                 Nadu State Transport Corporation.
+            </li>
+
+            <li>
+                It is a state-owned transportation company with a 
+                range of 300 km.
+            </li>
+
+            <li>
+                More than half of the SETC serve to connect each district with 
+                the capital of the state of Chennai
+            </li>
+
+            <li>
+                <b>All set bus registration number TN 01 N.</b>         
+            </li>
+
+            <ul>
+                <li>
+                    Ultra Deluxe (623)
+                </li>
+                <li>
+                    Non AC Seater cum Sleeper (152)
+                </li>
+                <li>
+                    AC Seater (100)
+                </li>
+                <li>
+                    AC Seater Sleeper (206)
+                </li>
+                <li>
+                    AC Sleeper (34)
+                </li>
+            </ul>
+        </ul>
+        <hr>
+    <br>
+
+    <h2>
+        MTC
+    </h2>
+    <img class="pic_ali" src="Images\mtc.png" alt="mtc bus">
+    <ul>
+        <li>
+            Metropolitan Transport Corporation Limited (MTC) is one of the 
+            8 companies of Tamil Nadu State Transport Cooperative.
+        </li>
+        <li>
+            It is registered under Government of Tamil Nadu, 
+            India Undertaking, Companies Act, 1956.
+        </li>
+        <li>
+            All MTC Bus Registration Number is TN 01 N, 01 AN, 02N.
+        </li>
+        <ul>
+            <li>
+                Normal service
+            </li>
+            <li>
+                Deluxe service
+            </li>
+            <li>
+                Express service
+            </li>
+            <li>
+                AC service
+            </li>
+            <li>
+                Small & Night service
+            </li>
+            <li>
+                Women / Children Service
+            </li>
+        </ul>
+    </ul>
+</div>
+
+<!--footer area-->
+<div class="footer">
+    <div class="foot-conte">
+
+        <div class="foot-section">
+            <h4>STU Information</h4>
+            <ul>
+                <li><a href="Divisions.html">Divisions</a></li>
+                <li><a href="Organization Structure.html.html">Organization Structure</a></li>
+                <li><a href="Fare Structure.html">Fare Structure</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-section">
+            <h4>General Info</h4>
+            <ul>
+                <li><a href="Busstans.html">Bus Stands</a></li>
+                <li><a href="Bus Gallery.html">Gallery</a></li>
+                <li><a href="Divisional Depots.html">Depots</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-section">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="Ticket System.html">Ticket System</a></li>
+                <li><a href="IRT.html">IRT</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>
+            </ul>
+            
+        </div>
+
+    </div>
+
+
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Arasubus/61553062190406/
+        " target="_blank"><img src="Social Media Images\FB.png" alt="Facebook"></a>
+        <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images\X.png" alt="X.com"></a>
+        <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images\yourubr.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/arasubus/"  target="_blank"><img src="Social Media Images\instagram.png" alt="Instagram"></a>
+    </div>
+</div>
+
+</body>
+</html>

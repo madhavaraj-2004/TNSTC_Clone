@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fare Structure</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #fffffd;
+      color: black;
+      margin: 0;
+    }
+
+    * {
+      text-decoration: none;
+      margin: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      height: 100px;
+      background-color: #92caff;
+    }
+
+    .header img {
+      height: 80px;
+    }
+
+    .header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .header li {
+      margin-right: 20px;
+      font-size: 1.2rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .header ul li a {
+      color: black;
+    }
+
+    .header ul li a:hover {
+      color: orangered;
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-family: "Aladin", serif;
+      font-size: 30px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #eff1ef;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 2px solid #252524;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    th {
+      background-color: #b11111e7;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #d6d5d8;
+    }
+
+    tr:hover {
+      background-color: #fcf9ff;
+    }
+
+    .footer {
+      background-color: hsl(0, 0%, 5%);
+      padding: 20px 15px;
+    }
+
+    .foot-conte {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .foot-section {
+      flex: 1 1 200px;
+    }
+
+    .foot-section h4 {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .foot-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .foot-section ul li {
+      font-family: "Noto Serif Hentaigana", serif;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .foot-section ul li a {
+      color: white;
+    }
+
+    .foot-section ul li a:hover {
+      text-decoration: underline;
+      color: #ff1919;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social-media a {
+      margin: 5px 10px;
+    }
+
+    .social-media img {
+      width: 35px;
+      height: auto;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 992px) {
+      .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+      }
+
+      .header img {
+        height: 60px;
+        margin-bottom: 10px;
+      }
+
+      .header ul {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .header li {
+        font-size: 16px;
+        margin: 5px;
+      }
+
+      table, th, td {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 14px;
+        padding: 6px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .header ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="Images/TNSTC logo.png" alt="my head">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="History.html">History</a></li>
+      <li><a href="Vision.html">Vision</a></li> 
+    </ul>
+  </div>
+
+  <h1>TNSTC Fare Structure 2013-25</h1>
+  <table>
+    <tr>
+      <th>Type Of Services</th>
+      <th colspan="2">Rate per Passenger Kilo Meter (In Paisa)</th>
+    </tr>
+    <tr><td>Ordinary</td><td colspan="2">58</td></tr>
+    <tr><td>Express</td><td colspan="2">75</td></tr>
+    <tr><td>Express/Deluxe</td><td colspan="2">85</td></tr>
+    <tr><td>Ultra Deluxe</td><td colspan="2">100</td></tr>
+    <tr><td>A/C Coaches</td><td colspan="2">130</td></tr>
+    <tr><td>A/C Volvo Coaches</td><td colspan="2">170</td></tr>
+    <tr><td>Ghat Road</td><td colspan="2">Basic fare of plain+20% Shall Be Changed From Passengers</td></tr>
+    <tr><td colspan="3">SETC (Flexi Charge)</td></tr>
+    <tr>
+      <th></th>
+      <th>Fare for Lean days Mon-Thu</th>
+      <th>Fare for peak days Fri-Sun</th>
+    </tr>
+    <tr><td>Ultra Deluxe Bus With Toilet Facility</td><td>105</td><td>115</td></tr>
+    <tr><td>A/C Sleeper Bus</td><td>180</td><td>200</td></tr>
+    <tr><td>Non-A/C Sleeper Bus</td><td>135</td><td>155</td></tr>
+  </table>
+<br>
+<br>
+
+  <div class="footer">
+    <div class="foot-conte">
+      <div class="foot-section">
+        <h4>STU Information</h4>
+        <ul>
+          <li><a href="Divisions.html">Divisions</a></li>
+          <li><a href="Organization Structure.html.html">Organization Structure</a></li>
+          <li><a href="Fare Structure.html">Fare Structure</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-section">
+        <h4>General Info</h4>
+        <ul>
+          <li><a href="Busstans.html">Bus Stands</a></li>
+          <li><a href="Bus Gallery.html">Gallery</a></li>
+          <li><a href="Divisional Depots.html">Depots</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-section">
+        <h4>Other Links</h4>
+        <ul>
+          <li><a href="Ticket System.html">Ticket System</a></li>
+          <li><a href="IRT.html">IRT</a></li>
+          <li><a href="Contact page.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/people/Arasubus/61553062190406/" target="_blank">
+        <img src="Social Media Images/FB.png" alt="Facebook">
+      </a>
+      <a href="https://x.com/arasubus" target="_blank">
+        <img src="Social Media Images/X.png" alt="X.com">
+      </a>
+      <a href="https://www.youtube.com/@arasubus" target="_blank">
+        <img src="Social Media Images/yourubr.png" alt="Youtube">
+      </a>
+      <a href="https://www.instagram.com/arasubus/" target="_blank">
+        <img src="Social Media Images/instagram.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</body>
+</html>

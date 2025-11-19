@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+/* ==== Root Variables ==== */
+:root {
+    --primary-color: #92caff;
+    --text-color: #000;
+    --hover-color: orangered;
+    --footer-hover: #ff1919;
+    --bg-color: #fffffd;
+}
+
+/* ==== Global Reset ==== */
+* {
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+/* ==== Header ==== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: auto;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-family: "Aladin", serif;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header li {
+    font-size: 1.1rem;
+}
+
+.header ul li a {
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.header ul li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* ==== Gallery ==== */
+.gallary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.img_continer1 {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.img_continer1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img_continer1 img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.img_continer1 p {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* ==== Modal for Click View ==== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 60px;
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--hover-color);
+}
+
+/* ==== Footer ==== */
+.footer {
+    background-color: black;
+    color: var(--text-color);
+    padding: 20px 10px;
+    border-top: 1px solid #444;
+}
+
+.foot-conte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.foot-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+.foot-section ul {
+    list-style: none;
+}
+
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.foot-section ul li a {
+    color: white;
+    transition: color 0.3s;
+    margin-left: 20px;
+}
+
+.foot-section ul li a:hover {
+    color: var(--footer-hover);
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="Images\TNSTC logo.png" alt="my head">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Vision.html">Vision</a></li> 
+        </ul>
+    </div>
+
+<br>
+<h1 style="margin-left: 16px;">Image Gallery</h1>
+<div class="gallary">
+    <div class="img_continer1" onclick="openModal('Gaalary/SETC AC SLP COCH.webp')">
+    <img src="Gaalary/SETC AC SLP COCH.webp" alt="SETC A/C Sleeper Coach">
+    <p>SETC A/C Sleeper Coach</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/22 ud.webp')">
+    <img src="Gaalary/22 ud.webp" alt="2*2 UD">
+    <p>TNSTC 2*2 Seater Super Deluxe Coach</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/TNSTC 1 TO1.webp')">
+    <img src="Gaalary/TNSTC 1 TO1.webp" alt="2*3 A/C">
+    <p>TNSTC 2*3 Seater A/C 1 To 1 Mofussil Coach</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/Salem vellore.jpg.webp')">
+    <img src="Gaalary/Salem vellore.jpg.webp" alt="2*3 Mofsil EXP">
+    <p>TNSTC 2*3 Seater Express Coaches</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/uthi slm.jpg')">
+    <img src="Gaalary/uthi slm.jpg" alt="DLX">
+    <p>TNSTC 2*3 Seater Deluxe Coaches</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/TNSTC 1 TO1 DLX.webp')">
+    <img src="Gaalary/TNSTC 1 TO1 DLX.webp" alt="TO1">
+    <p>TNSTC 1 TO 1 Super Deluxe Coaches</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/mte che.jpg')">
+    <img src="Gaalary/mte che.jpg" alt="semi dlx">
+    <p>TNSTC 2*3 Seater Semi Super Deluxe Coaches</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/kum ord exp.webp')">
+    <img src="Gaalary/kum ord exp.webp" alt="ord">
+    <p>TNSTC 2*3 Seater Ord/Exp Coaches</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/Expres bu TNV.webp')">
+    <img src="Gaalary/Expres bu TNV.webp" alt="Express">
+    <p>TNSTC 2*3 Seater 1 T0 3 Or, 1 TO 6 Express Coaches</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/GHAT CBE.webp')">
+    <img src="Gaalary/GHAT CBE.webp" alt="GHAT">
+    <p>TNSTC 2*3 44 Seater Ghat Hilstation Services</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/bom omr erd.jpg')">
+    <img src="Gaalary/bom omr erd.jpg" alt="70km Services">
+    <p>TNSTC 2*3 Seater 60km to 70km range Ordinary Mofsil Services</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/CBE TET.webp')">
+    <img src="Gaalary/CBE TET.webp" alt="temple services">
+    <p>TNSTC 2*3 Semi Deluxe Special Services</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/SLM LSS NKL RVLR.jpg')">
+    <img src="Gaalary/SLM LSS NKL RVLR.jpg" alt="LSS">
+    <p>TNSTC 2*2 Seater Limited Stoping Servce townees</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/kri twn2.PNG')">
+    <img src="Gaalary/kri twn2.PNG" alt="TOWN">
+    <p>TNSTC 2*2 Ordinary Town Bus Services</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/epd tck.webp')">
+    <img src="Gaalary\epd tck.webp" alt="dlx towne">
+    <p>TNSTC 2*2 Seater Intercity Town Bus Service</p>
+</div>
+
+<div class="img_continer1" onclick="openModal('Gaalary/chennai ule.jpeg')">
+    <img src="Gaalary/chennai ule.jpeg" alt="ule">
+    <p>TNSTC Ultra Deluxe Low Floar Town Bus Services</p>
+</div>
+
+</div>
+
+<!-- Modal -->
+<div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<!--footer area-->
+<div class="footer">
+    <div class="foot-conte">
+        <div class="foot-section">
+            <h4>STU Information</h4>
+            <ul>
+                <li><a href="Divisions.html">Divisions</a></li>
+                <li><a href="Organization Structure.html.html">Organization Structure</a></li>
+                <li><a href="Fare Structure.html">Fare Structure</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>General Info</h4>
+            <ul>
+                <li><a href="Busstans.html">Bus Stands</a></li>
+                <li><a href="Bus Gallery.html">Gallery</a></li>
+                <li><a href="Divisional Depots.html">Depots</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="Ticket System.html">Ticket System</a></li>
+                <li><a href="IRT.html">IRT</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Arasubus/61553062190406/" target="_blank"><img src="Social Media Images/FB.png" alt="Facebook"></a>
+        <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images/X.png" alt="X.com"></a>
+        <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images/yourubr.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images/instagram.png" alt="Instagram"></a>
+    </div>
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imgModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

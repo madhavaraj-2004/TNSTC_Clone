@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TNSTC - Responsive Page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+    body {
+      background-color: #fffffd;
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      margin: 0;
+    }
+
+    * {
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #92caff;
+      flex-wrap: wrap;
+    }
+
+    .header img {
+      height: 80px;
+      width: auto;
+    }
+
+    .header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .header li {
+      font-size: 1.2rem;
+      font-family: 'Times New Roman', Times, serif;
+      padding-right: 5px;
+      margin-right: 5px;
+    }
+
+    .header ul li a {
+      color: black;
+    }
+
+    .header ul li a:hover {
+      color: orangered;
+      text-decoration: underline;
+    }
+
+    /* CONTENT */
+    h1 {
+      font-family: "Aladin", serif;
+      color: black;
+      font-size: 34px;
+      margin: 20px;
+    }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .future_vsn, .fare_conce, .bus_pass {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: #0e0e0e;
+      color: white;
+      padding: 30px 20px;
+      border-top: 1px solid #444;
+    }
+
+    .foot-conte {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .foot-section {
+      flex: 1 1 200px;
+      min-width: 180px;
+    }
+
+    .foot-section h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+
+    .foot-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .foot-section ul li {
+      font-family: "Noto Serif Hentaigana", serif;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .foot-section ul li a {
+      color: white;
+      margin-left: 20px;
+    }
+
+    .foot-section ul li a:hover {
+      text-decoration: underline;
+      color: #ff1919;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .social-media img {
+      width: 35px;
+      height: auto;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+      h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .header ul {
+        justify-content: center;
+      }
+
+      .foot-conte {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header img {
+        height: 60px;
+      }
+
+      ul {
+        font-size: 18px;
+      }
+
+      .foot-section h4 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="Images/TNSTC logo.png" alt="TNSTC Logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="History.html">History</a></li>
+      <li><a href="Vision.html">Vision</a></li> 
+    </ul>
+  </div>
+
+  <h1>Future Vision</h1>
+  <div class="future_vsn">
+    <ul>
+      <li>To make bus transportation user friendly, affordable, efficient and provide last mile connectivity;</li>
+      <li>To provide bus travel with alternate fuel such as Electric, CNG, LNG etc;</li>
+      <li>Introduction of buses enabling easy access for Differently Abled persons;</li>
+      <li>Use of IT, ITS for online monitoring of buses & real-time passenger info;</li>
+      <li>To make easy and safe door-to-door journeys;</li>
+      <li>Convenient ticketing with simple digital payment;</li>
+      <li>To attain the sustainable development goals by 2030.</li>
+    </ul>
+  </div>
+
+  <h1>Fare Concessions</h1>
+  <div class="fare_conce">
+    <ul>
+      <li>MPs / MLAs</li>
+      <li>Accredited Journalists</li>
+      <li>Freedom Fighters & their Legal Heirs</li>
+      <li>Cancer Patients & Differently-abled persons</li>
+      <li>Drama Artists, HIV/AIDS patients, Senior Citizen Pass</li>
+    </ul>
+  </div>
+
+  <h1>Concessions for Students</h1>
+  <div class="bus_pass">
+    <ul>
+      <li>Students 1st Std to 12th Std in Govt recognized schools</li>
+      <li>Govt ITI, Arts & Science, and Polytechnic students eligible</li>
+      <li>Valid for Ordinary, Express & Deluxe buses</li>
+      <li>50% concession for private colleges & polytechnics</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="foot-conte">
+      <div class="foot-section">
+        <h4>STU Information</h4>
+        <ul>
+          <li><a href="Divisions.html">Divisions</a></li>
+          <li><a href="Organization Structure.html">Organization Structure</a></li>
+          <li><a href="Fare Structure.html">Fare Structure</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-section">
+        <h4>General Info</h4>
+        <ul>
+          <li><a href="Busstans.html">Bus Stands</a></li>
+          <li><a href="Bus Gallery.html">Gallery</a></li>
+          <li><a href="Divisional Depots.html">Depots</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-section">
+        <h4>Other Links</h4>
+        <ul>
+          <li><a href="Ticket System.html">Ticket System</a></li>
+          <li><a href="IRT.html">IRT</a></li>
+          <li><a href="Contact page.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/people/Arasubus/61553062190406/" target="_blank"><img src="Social Media Images/FB.png" alt="Facebook"></a>
+      <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images/X.png" alt="X.com"></a>
+      <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images/yourubr.png" alt="Youtube"></a>
+      <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images/instagram.png" alt="Instagram"></a>
+    </div>
+  </div>
+</body>
+</html>

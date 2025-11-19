@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depots</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fffffd;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background-color: #92caff;
+}
+.header img {
+    max-height: 80px;
+    height: auto;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.header li {
+    font-size: 18px;
+}
+.header ul li a {
+    color: black;
+}
+.header ul li a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+/* Title */
+h1 {
+    font-family: "Aladin", serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Slider Container */
+.slider {
+    position: center;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.slide h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+.footer {
+    background-color: #0e0e0e;
+    padding: 20px 10px;
+    border-top: 1px solid #444;
+}
+.foot-conte {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.foot-section {
+    flex: 1 1 200px;
+}
+.foot-section h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.foot-section ul {
+    list-style: none;
+    padding: 0;
+}
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.foot-section ul li a {
+        margin-left: 20px;
+    color: white;
+}
+.foot-section ul li a:hover {
+    text-decoration: underline;
+    color: #ff1919;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.social-media img {
+    width: 35px;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 { font-size: 1.6rem; }
+    .slide h2 { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+  <div class="header">
+        <img src="Images\TNSTC logo.png" alt="my head">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Vision.html">Vision</a></li> 
+        </ul>
+    </div>
+
+<h1>Regional Depots</h1>
+
+<!-- Image Slider -->
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <h2>TNSTC Kumbakonam</h2>
+            <img src="Depots/kum.jpeg" alt="Kumbakonam">
+        </div>
+        <div class="slide">
+            <h2>TNSTC Viluppuram</h2>
+            <img src="Depots/vpm.jpeg" alt="Viluppuram">
+        </div>
+        <div class="slide">
+            <h2>TNSTC Madurai</h2>
+            <img src="Depots/mdu.jpeg" alt="Madurai">
+        </div>
+        <div class="slide">
+            <h2>TNSTC Coimbatore</h2>
+            <img src="Depots/cbe.jpeg" alt="Coimbatore">
+        </div>
+        <div class="slide">
+            <h2>TNSTC Salem</h2>
+            <img src="Depots/salem.PNG" alt="Salem">
+        </div>
+        <div class="slide">
+            <h2>TNSTC Tirunelveli</h2>
+            <img src="Depots/tnv.jpeg" alt="Tirunelveli">
+        </div>
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="foot-conte">
+        <div class="foot-section">
+            <h4>STU Information</h4>
+            <ul>
+                <li><a href="Divisions.html">Divisions</a></li>
+                <li><a href="Organization Structure.html.html">Organization Structure</a></li>
+                <li><a href="Fare Structure.html">Fare Structure</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>General Info</h4>
+            <ul>
+                <li><a href="Busstans.html">Bus Stands</a></li>
+                <li><a href="Bus Gallery.html">Gallery</a></li>
+                <li><a href="Divisional Depots.html">Depots</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="Ticket System.html">Ticket System</a></li>
+                <li><a href="IRT.html">IRT</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Arasubus/61553062190406/" target="_blank"><img src="Social Media Images/FB.png" alt="Facebook"></a>
+        <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images/X.png" alt="X.com"></a>
+        <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images/yourubr.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images/instagram.png" alt="Instagram"></a>
+    </div>
+</div>
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelector(".slides");
+const totalSlides = document.querySelectorAll(".slide").length;
+
+document.querySelector(".next").addEventListener("click", () => {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    updateSlide();
+});
+document.querySelector(".prev").addEventListener("click", () => {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    updateSlide();
+});
+function updateSlide() {
+    slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+}
+
+// Swipe support for mobile
+let startX = 0;
+slides.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+slides.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) { // swipe left
+        slideIndex = (slideIndex + 1) % totalSlides;
+    } else if (endX - startX > 50) { // swipe right
+        slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    }
+    updateSlide();
+});
+</script>
+
+</body>
+</html>

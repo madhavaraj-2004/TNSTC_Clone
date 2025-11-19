@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Page</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap" rel="stylesheet">
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.7;
+    background-color: #fffffd;
+    color: black;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color:  #92caff;
+    flex-wrap: wrap;
+}
+.header img {
+    max-height: 80px;
+    width: auto;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.header li {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+.header ul li a {
+    color: black;
+    transition: color 0.3s;
+}
+.header ul li a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+/* HEADINGS */
+h1, h2 {
+    color: #503ef7;
+}
+h1 {
+    font-family: "Aladin", serif;
+    font-size: 2rem;
+    color: black;
+    padding: 20px 5%;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* CONTENT SECTIONS */
+.Aboutee, .Aboutee11 {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+.Aboutee ul, .Aboutee11 ul {
+    padding-left: 20px;
+}
+.Aboutee li, .Aboutee11 li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+.Aboutee11 {
+    background: #92caff;
+    border-radius: 8px;
+}
+
+/* FUNCTIONS IMAGE SECTION */
+.funcs_org {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+.org_fun {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 20px 5%;
+    border-top: 1px solid #444;
+}
+.foot-conte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.foot-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.foot-section ul {
+    list-style: none;
+}
+.foot-section ul li {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.foot-section ul li a {
+    color: white;
+    transition: color 0.3s;
+}
+.foot-section ul li a:hover {
+    text-decoration: underline;
+    color: #ff1919;
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.social-media img {
+    width: 35px;
+    transition: transform 0.3s;
+}
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .header ul {
+        justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+    .Aboutee, .Aboutee11 {
+        padding: 15px;
+    }
+    .Aboutee li, .Aboutee11 li {
+        font-size: 1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="Images/TNSTC logo.png" alt="TNSTC Logo">
+    <ul>
+             <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Vision.html">Vision</a></li> 
+    </ul>
+</div>
+
+<!-- ABOUT -->
+<h1>About Us</h1>
+
+<div class="Aboutee">
+    <h2>Genesis of State Transport Undertakings</h2>
+    <ul>
+        <li>
+            On 01.01.1972, Pallavan Transport Corporation was established under Companies Act,
+            1956 and buses operated in Chennai and Chengalpattu were
+            brought under it and paved way for inception of other 
+            State Transport Undertakings.
+        </li>
+        <li>
+            Government owned public transport bus operator in Tamil Nadu, India.
+            It operates Intercity bus services to cities within Tamil Nadu, and from Tamil Nadu to its neighbouring states.
+            It also operates town buses in major cities and towns of Tamil Nadu, except Chennai, where MTC operates. 
+            It is a bus operator with over 20,258 buses and 17 million daily ridership.
+        </li>
+    </ul>
+</div>
+
+<div class="Aboutee11">
+    <ul>
+        <li>Tamil Nadu State Transport Corporation Limited (TNSTC) is a public transport bus operator in Tamil Nadu, India.</li>
+        <li>It operates Intercity or Moffusil bus services to cities in Tamil Nadu and to neighbouring states.</li>
+        <li>It also operates public transport bus service in many cities of Tamil Nadu, except Chennai, where MTC operates.</li>
+        <li>The largest transport corporation division in Tamil Nadu is TNSTC Kumbakonam — also the largest in South India.</li>
+    </ul>
+</div>
+
+<!-- FUNCTIONS -->
+<div class="funcs_org">
+    <h2>Functions of Organisations</h2>
+    <img class="org_fun" src="Images/Function Organization.PNG" alt="Function Organisation">
+</div>
+<br>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="foot-conte">
+        <div class="foot-section">
+            <h4>STU Information</h4>
+            <ul>
+                <li><a href="Divisions.html">Divisions</a></li>
+                <li><a href="Organization Structure.html">Organization Structure</a></li>
+                <li><a href="Fare Structure.html">Fare Structure</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>General Info</h4>
+            <ul>
+                <li><a href="Busstans.html">Bus Stands</a></li>
+                <li><a href="Bus Gallery.html">Gallery</a></li>
+                <li><a href="Divisional Depots.html">Depots</a></li>
+            </ul>
+        </div>
+        <div class="foot-section">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="Ticket System.html">Ticket System</a></li>
+                <li><a href="IRT.html">IRT</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Arasubus/61553062190406/" target="_blank"><img src="Social Media Images/FB.png" alt="Facebook"></a>
+        <a href="https://x.com/arasubus" target="_blank"><img src="Social Media Images/X.png" alt="Twitter"></a>
+        <a href="https://www.youtube.com/@arasubus" target="_blank"><img src="Social Media Images/yourubr.png" alt="YouTube"></a>
+        <a href="https://www.instagram.com/arasubus/" target="_blank"><img src="Social Media Images/instagram.png" alt="Instagram"></a>
+    </div>
+</div>
+
+</body>
+</html>
